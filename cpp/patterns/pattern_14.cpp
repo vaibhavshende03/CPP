@@ -1,12 +1,11 @@
 /*
 pattern :
 
-A A A A A A
-B B B B B B
-C C C C C C
-D D D D D D
-E E E E E E
-F F F F F F
+A
+B B
+C C C
+D D D D
+E E E E E
 */
 
 #include <iostream>
@@ -22,7 +21,7 @@ int main()
 
         for (int i = 1; i <= n; ++i)
         {
-            for (int j = 1; j <= n; ++j)
+            for (int j = 1; j <= i; ++j)
             {
                 char ch = 'A' + i - 1;
                 cout << ch << " ";
@@ -44,7 +43,7 @@ int main()
         int j = 1;
         char ch = 'A' + i - 1;
 
-        while (j <= n)
+        while (j <= i)
         {
             cout << ch << " ";
             j++;
@@ -61,7 +60,7 @@ int main()
 
     // for (char i = 'A'; i <= n; ++i)
     // {
-    //     for (char j = 'A'; j <= n; ++j)
+    //     for (char j = 'A'; j <= i; ++j)
     //     {
     //         cout << j << " ";
     //     }

@@ -1,12 +1,11 @@
 /*
 pattern :
 
-A A A A A A
-B B B B B B
-C C C C C C
-D D D D D D
-E E E E E E
-F F F F F F
+A B C D
+A B C D
+A B C D
+A B C D
+
 */
 
 #include <iostream>
@@ -24,7 +23,7 @@ int main()
         {
             for (int j = 1; j <= n; ++j)
             {
-                char ch = 'A' + i - 1;
+                char ch = 'A' + j - 1;
                 cout << ch << " ";
             }
             cout << endl;
@@ -42,10 +41,10 @@ int main()
     {
 
         int j = 1;
-        char ch = 'A' + i - 1;
 
         while (j <= n)
         {
+            char ch = 'A' + j - 1;
             cout << ch << " ";
             j++;
         }
@@ -54,19 +53,6 @@ int main()
     }
 
     //--------------------------------------------------------------------------
-    // char n{};
-
-    // cout << "Enter The number :";
-    // cin >> n;
-
-    // for (char i = 'A'; i <= n; ++i)
-    // {
-    //     for (char j = 'A'; j <= n; ++j)
-    //     {
-    //         cout << j << " ";
-    //     }
-    //     cout << endl;
-    // }
 
     return 0;
 }
