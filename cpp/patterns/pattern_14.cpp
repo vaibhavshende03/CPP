@@ -14,20 +14,43 @@ using namespace std;
 
 int main()
 {
+    /*
+        int n{};
 
+        cout << "Enter The number :";
+        cin >> n;
+
+        for (int i = 1; i <= n; ++i)
+        {
+            for (int j = 1; j <= n; ++j)
+            {
+                char ch = 'A' + i - 1;
+                cout << ch << " ";
+            }
+            cout << endl;
+        }
+    */
+    //--------------------------------------------------------------------------
     int n{};
 
-    cout << "Enter The number :";
+    cout << "Enter the number :";
     cin >> n;
 
-    for (int i = 1; i <= n; ++i)
+    int i = 1;
+
+    while (i <= n)
     {
-        for (int j = 1; j <= n; ++j)
+
+        int j = 1;
+        char ch = 'A' + i - 1;
+
+        while (j <= n)
         {
-            char ch = 'A' + i - 1;
             cout << ch << " ";
+            j++;
         }
         cout << endl;
+        i++;
     }
 
     //--------------------------------------------------------------------------
